@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<style>
+  .background {
+    background-color: #262626;
+  }
+  .uberschrift {
+    font-size: 30px;
+    padding: 16px;
+    color: white;
+    background-color: #171717;
+  }
+  button {
+    background-color: yellow;
+    height: 90px;
+    font-size: 60px;
+    width: 70%;
+  }
+  .buttons {
+   padding-top: 20px;
+   padding-left: 20px;
+   font-size: 20px;
+   height: 60px;
+   padding: 50px;
+  }
+  
+</style>
+<html>
+  <head>
+    <title>Meme sounds</title>
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body class="background">
+    <div class="uberschrift">
+      <img src="menu.png"> Meme sounds
+    </div>
+    <div class="buttons">
+    <button onclick="nokiausSound()">Nokia</button>
+    </div>
+    <div class="buttons">
+    <button onclick="playSound()">Amongus</button>
+    </div>
+    
+    <div class="buttons">
+    <button onclick="keineSound()">keine show</button>
+    </div>
+    <div class="buttons">
+    <button onclick="rausSound()">Ich muss raus</button>
+    </div>
+    <div class="buttons">
+    <button onclick="siuSound()">siuuuu</button> 
+    </div>
+
+    <script>
+    function playSound() {
+  var sound = new Audio('amongus.mp3');
+  sound.play();
+}
+function siuSound() {
+  var sound = new Audio('siu.mp3');
+  sound.play();
+}
+function keineSound() {
+  var sound = new Audio('keine.mp3');
+  sound.play();
+}
+function rausSound() {
+  var sound = new Audio('raus.mp3');
+  sound.play();
+}
+function nokiausSound() {
+  var sound = new Audio('3310.mp3');
+  sound.play();
+}
+    </script>
+  </body>
+</html>
